@@ -1,0 +1,17 @@
+.pageWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.moduleSection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modulesWrapper {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

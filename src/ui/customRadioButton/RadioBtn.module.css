@@ -1,0 +1,15 @@
+.radioBtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.radioBtn p {
+  font-family: var(--main-font-font-family);
+  color: var(--text-secondary-color-color);
+}
+
+.radioBtn > input[type="radio"] {
+  accent-color: var(--text-primary-color-color);
+}
