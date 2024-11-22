@@ -17,6 +17,7 @@ const sideMenuUserData = [
   { title: "Dashboard", link: "/dashboard", icon: layers },
   { title: "Simulate", link: "/simulate", icon: simulate },
   { title: "Marketplace", link: "/marketplace", icon: marketplace },
+  { title: "Wallet", link: "/wallet", icon: profile },
   { title: "My profile", link: "/profile", icon: profile },
 ];
 
