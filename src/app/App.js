@@ -17,6 +17,9 @@ import SuccessPayment from "../pages/successPayment/SuccessPayment";
 import UnSuccessPayment from "../pages/unsuccessPayment/UnSuccessPayment";
 import SubscriptionPage from "../pages/subscriptionPage/SubscriptionPage";
 import RegisterForm from "../widgets/registerForm/RegisterForm";
+import WalletPage from "../pages/walletPage/WalletPage";
+
+
 
 const router = createHashRouter([
   {
@@ -94,6 +97,14 @@ const router = createHashRouter([
         element: (
           //<RequireAuth roles={["ROLE_ADMIN"]}>
           <CourseCreationPage />
+          //</RequireAuth>
+        ),
+      },
+      {
+        path: '/wallet',
+        element: (
+          //<RequireAuth roles={["ROLE_ADMIN"]}>
+          <WalletPage />
           //</RequireAuth>
         ),
       },
