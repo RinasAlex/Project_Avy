@@ -1,20 +1,15 @@
-/* Общий стиль для контейнера */
-.wallet {
-  font-family: Arial, sans-serif;
-  padding: 40px;
-  background: linear-gradient(to bottom, #f5f9ff, #e3efff);
-  min-height: 100vh;
-}
 
-/* Заголовок */
+.wallet {
+  padding: 40px;
+  }
+
 .wallet h1 {
   text-align: center;
   font-size: 2.5rem;
-  color: #333;
+  color: var(--text-headers-color);
   margin-bottom: 20px;
 }
 
-/* Баланс */
 .wallet_balance {
   text-align: center;
   background: #ffffff;
@@ -27,17 +22,16 @@
 
 .wallet_balance span {
   font-size: 1.2rem;
-  color: #777;
+  color: var(--text-gray-color);
 }
 
 .wallet_balance strong {
   display: block;
   font-size: 2rem;
-  color: #333;
+  color: var(--text-headers-color);
   margin-top: 10px;
 }
 
-/* Кнопки */
 .wallet_button {
   display: flex;
   justify-content: center;
@@ -46,22 +40,18 @@
 }
 
 .wallet_button button {
-  background: linear-gradient(to right, #66c6ff, #836fff);
   color: white;
   font-size: 1rem;
-  padding: 10px 20px;
-  border: none;
   border-radius: 30px;
   cursor: pointer;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  transition: background 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
 }
 
 .wallet_button button:hover {
   background: linear-gradient(to right, #4da6e6, #6e5bc3);
 }
 
-/* История транзакций */
 .wallet_transaction-history {
   margin: 0 auto;
   max-width: 800px;
@@ -70,14 +60,12 @@
 
 .wallet_transaction-history h2 {
   font-size: 1.8rem;
-  color: #333;
+  color: var(--text-headers-color);
   margin-bottom: 20px;
 }
 
 .wallet_transaction-history ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .wallet_transaction-history li {
@@ -93,10 +81,9 @@
 
 .wallet_transaction-history li span {
   font-size: 1rem;
-  color: #555;
+  color: var(--text-gray-color);
 }
 
-/* Акции */
 .wallet_promotions {
   margin: 0 auto;
   max-width: 800px;
@@ -105,11 +92,10 @@
 
 .wallet_promotions h2 {
   font-size: 1.8rem;
-  color: #333;
+  color: var(--text-headers-color);
   margin-bottom: 20px;
 }
 
-/* Карточки акций */
 .wallet_promotions .promo-list {
   display: flex;
   justify-content: space-around;
@@ -134,13 +120,13 @@
 
 .promo-card h3 {
   font-size: 1.5rem;
-  color: #333;
+  color: var(--text-headers-color);
   margin-bottom: 10px;
 }
 
 .promo-card p {
   font-size: 1rem;
-  color: #777;
+  color: var(--text-gray-color);
   margin-bottom: 20px;
 }
 
@@ -153,7 +139,7 @@
   border-radius: 30px;
   cursor: pointer;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  transition: background 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .promo-card button:hover {
