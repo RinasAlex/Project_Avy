@@ -5,6 +5,7 @@ import layers from '../../assets/images/layers.svg';
 import simulate from "../../assets/images/simulate.svg";
 import marketplace from "../../assets/images/marketplace.svg";
 import profile from "../../assets/images/profile.svg";
+import wallet from "../../assets/images/wallet.svg"
 import { useSelector } from 'react-redux';
 import CustomButton from '../../ui/customButton/CustomButton';
 import { useNavigate } from 'react-router-dom';
@@ -17,7 +18,7 @@ const sideMenuUserData = [
   { title: "Dashboard", link: "/dashboard", icon: layers },
   { title: "Simulate", link: "/simulate", icon: simulate },
   { title: "Marketplace", link: "/marketplace", icon: marketplace },
-  { title: "Wallet", link: "/wallet", icon: profile },
+  { title: "Wallet", link: "/wallet", icon: wallet },
   { title: "My profile", link: "/profile", icon: profile },
 ];
 
