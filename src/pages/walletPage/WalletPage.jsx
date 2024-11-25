@@ -1,21 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './WalletPage.css';
 import CustomButton from "../../ui/customButton/CustomButton";
+import { useDispatch, useSelector } from "react-redux";
+import { getUserData } from "../../store/slice/userActions";
+import { Link } from "react-router-dom";
 
 
 const WalletPage = ({ transactions }) => {
+    const dispatch = useDispatch();
+    const { userToken } = useSelector((state) => state.auth);
+    const { userInfo } = useSelector((state) => state.user);
+  
+
+
+    useEffect(() => {
+        dispatch(getUserData(userToken));
+      }, [userToken]);
 
     return (
         <div className="wallet">
             <h1>Wallet</h1>
             <div className="wallet_balance">
                 <span>Balance:</span>
-                <strong> 500 coins</strong>
+                <strong> {userInfo.coins ?? 0} coins</strong>
             </div>
 
             <div className="wallet_button">
                 <CustomButton text={"Top Up"} />
+                <Link to={'/marketplace'}>
                 <CustomButton text={"Spend"} />
+                </Link>
                 <CustomButton text={"Transfer"} />
             </div>
 
