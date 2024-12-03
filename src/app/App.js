@@ -18,6 +18,8 @@ import UnSuccessPayment from "../pages/unsuccessPayment/UnSuccessPayment";
 import SubscriptionPage from "../pages/subscriptionPage/SubscriptionPage";
 import RegisterForm from "../widgets/registerForm/RegisterForm";
 import WalletPage from "../pages/walletPage/WalletPage";
+import CertificateForm from "../widgets/certificateForm/CertificateForm";
+import BadgeForm from "../widgets/badgeForm/BadgeForm";
 
 
 
@@ -119,6 +121,14 @@ const router = createHashRouter([
       {
         path: "/unsuccess",
         element: <UnSuccessPayment />,
+      },
+      {
+        path: "/certificate",
+        element: <CertificateForm />,
+      },
+      {
+        path: "/badge",
+        element: <BadgeForm />,
       },
     ],
   },

@@ -1,0 +1,86 @@
+
+.badge-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f9f9ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .badge-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: var(--text-headers-color)
+  }
+  
+  .badge-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: var(--text-primary-color-color);
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .input-error {
+    border-color: #ff6b6b;
+  }
+  
+  .error-text {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+  }
+  
+  .form-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .submit-button,
+  .reset-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .submit-button {
+    background: linear-gradient(90deg, #7f8cf8, #4a4a8b);
+  }
+  
+  .reset-button {
+    background: linear-gradient(90deg, #ff6b6b, #ff8585);
+  }
+  
+  .submit-button:hover {
+    background: linear-gradient(90deg, #4a4a8b, #7f8cf8);
+  }
+  
+  .reset-button:hover {
+    background: linear-gradient(90deg, #ff8585, #ff6b6b);
+  }
+  
